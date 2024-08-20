@@ -1,0 +1,295 @@
+﻿body {
+    font-family: 'Montserrat', sans-serif;
+    background-image: url("img/Fondo2.png"), url("img/Fondo.png");
+    background-position: top right, bottom center;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 50% 20%, 100% 120%;
+    transition: background-size 2s ease;
+}
+
+.navbar {
+    padding: 0.5rem 1rem;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.navbar-collapse {
+    right: 0;
+    margin-right: auto;
+}
+
+.navbar-nav .nav-link {
+    color: #000;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #6a65f8;
+}
+
+
+.Usu {
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.Arriba {
+    display: flex;
+    margin: 10px;
+    top: 0;
+    right: 0;
+    position: absolute;
+}
+
+.Usuario {
+    right: 0;
+    display: flex;
+    margin: 10px;
+    top: 0;
+}
+
+.navbar-toggler {
+    right: 0;
+    margin: 10px;
+    top: 0;
+}
+
+.Usuario:hover .Usu {
+    opacity: 1;
+    transition: opacity 1s ease;
+}
+
+.approval-form {
+    background-color: #fff;
+    max-width: 1200px;
+    width: 100%;
+    position: relative;
+    padding: 40px;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 500px;
+    margin-bottom: 200px;
+    transition: margin-top 2s ease, width 2s ease;
+}
+
+    .approval-form h2 {
+        margin-bottom: 20px;
+        font-weight: bold;
+    }
+
+    .approval-form .form-group label {
+        font-weight: bold;
+    }
+
+.btn {
+    padding: 20px;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 12px;
+    font-weight: 800;
+    line-height: 2em;
+    letter-spacing: 3px;
+    color: #42474c;
+}
+
+.approval-form .btn-primary {
+    background-color: transparent;
+    border-color: #6366F1;
+}
+
+    .approval-form .btn-primary:hover {
+        background-color: #6366F1;
+    }
+
+.approval-form .btn-danger {
+    background-color: transparent;
+    border-color: #DC3545;
+}
+
+    .approval-form .btn-danger:hover {
+        background-color: #DC3545;
+    }
+
+.boss-image {
+    position: absolute;
+    top: -400px;
+    left: 20px;
+    max-height: 600px;
+    height: auto;
+    object-fit: cover;
+    z-index: -10;
+}
+
+.row {
+    background-image: url("img/planta.png");
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    transition: background-size 2s ease, width 2s ease;
+    padding: 20px;
+}
+
+.right {
+    justify-content: right;
+    width: 45%;
+    transition: background-size 0.5s ease, width 0.5s ease;
+    top: 2px;
+    left: -17px;
+}
+
+.left {
+    justify-content: left;
+    width: 40%;
+    transition: background-size 0.5s ease, width 0.5s ease;
+}
+
+@media (max-width: 992px) {
+    .row {
+        display: block;
+        transition: opacity 0.5s ease;
+    }
+
+    .right, .left {
+        width: 100%;
+        transition: background-size 0.5s ease, width 0.5s ease;
+    }
+
+    body {
+        background-size: 120% 12%, 100% 100%;
+        transition: background-size 2s ease;
+    }
+
+    .Texto {
+        text-align: center;
+        margin-top: -200px;
+        margin-left: -150px;
+        width: auto;
+        height: auto;
+        object-fit: cover;
+        right: 0;
+        max-width: 440px;
+        left: 70%;
+        margin-right: 30px;
+        transition: margin-top 2s ease, width 2s ease;
+        transition: margin-left 2s ease, width 2s ease;
+    }
+
+    .approval-form {
+        margin-top: 700px;
+        transition: margin-top 2s ease, width 2s ease;
+    }
+}
+
+label {
+    color: #6a65f8;
+}
+
+.text {
+    color: #6a65f8;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.text-left {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    font-weight: 100;
+}
+
+.text-secundary {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: #42474c;
+}
+
+.Texto {
+    position: relative;
+    top: 250px;
+    left: 40%;
+    height: 60%;
+    margin-right: 10px;
+    object-fit: cover;
+    z-index: -10;
+    transition: margin-top 2s ease, width 2s ease;
+    transition: margin-left 2s ease, width 2s ease;
+}
+
+.form-control {
+    margin-right: 0;
+}
+
+.footer {
+    background-color: #343a40;
+}
+
+    .footer .text-uppercase {
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+
+    .footer p {
+        font-size: 14px;
+        color: #ced4da;
+    }
+
+    .footer h6 {
+        font-weight: 700;
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
+    .footer small {
+        font-size: 12px;
+        color: #ced4da;
+    }
+
+    .footer .bg-darker {
+        background-color: #23272b;
+    }
+
+    .footer .text-center {
+        color: #ced4da;
+    }
+
+.boss-image {
+    width: 160px;
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    z-index: -1;
+}
+
+.footer {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+}
+
+    .footer .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+.footer-bottom {
+    background-color: #495057;
+    padding: 10px;
+}
+
+.approval-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
